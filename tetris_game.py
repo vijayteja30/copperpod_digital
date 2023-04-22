@@ -1,6 +1,11 @@
 from random import randint
 class TetrisGame:
     def __init__(self, size):
+                
+        """
+            Since Python Strings are immutable in some places used array for string replacement 
+            and then return string from it.
+        """
         self.size=size+1
 
         self.a=self.get_empty_board()
