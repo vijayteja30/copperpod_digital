@@ -21,7 +21,7 @@ class TetrisGame:
         #     self.a.append(tmp)
         
         self.tetris_pieces = ["****","* \n* \n**"," *\n *\n**", " *\n**\n* ","**\n**"]
-        self.current_piece = self.tetris_pieces[3] #self.tetris_pieces[randint(0,4)]
+        self.current_piece = self.tetris_pieces[randint(0,4)] # self.tetris_pieces[3]
         temp=self.current_piece.split('\n')
         self.curr_piece_width, self.curr_piece_height = len(temp[0]), len(temp)
         self.space_curr_width, self.space_curr_height = 0,0
